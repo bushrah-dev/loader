@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: indianred;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.number{
+  color: wheat;
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.card{
+  width: 406px;
+  height: 21px;
+  background: black;
+  border-radius: 13px;
+  padding: 3px;
+  box-sizing: border-box;
+}
+.content{
+  width: 10px;
+  height: 15px;
+  background: teal;
+  border-radius: 13px;
+}
+.text{
+  position: absolute;
+  left: 160px;
+  color: wheat;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 21px;
+  display: none;
+}
+.text-blink{
+  animation: animate .7s ease-in-out .1s;
+}
+@keyframes animate {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.2;
+  }
+  100%{
+    opacity: 1;
+  }
+}
